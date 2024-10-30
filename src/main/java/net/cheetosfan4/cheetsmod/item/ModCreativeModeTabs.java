@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.cheese);
                         output.accept(ModBlocks.GRITTLE);
                         output.accept(ModBlocks.YANDESITE);
+                        output.accept(ModItems.CHISEL);
                     })
                     .build());
 
