@@ -1,9 +1,15 @@
 {
   "item.cf4mod.cheese": "cheese",
   "item.cf4mod.chisel": "chisel",
+  "item.cf4mod.eggy": "eggy",
+  "item.cf4mod.geggy": "geggy",
+  "item.cf4mod.poop": "poop",
 
   "block.cf4mod.yandesite": "yandesite",
+  "block.cf4mod.polished_yandesite": "polished yandesite",
   "block.cf4mod.grittle": "grittle",
+  "block.cf4mod.magic_block": "magic block",
+  "block.cf4mod.poop_ore": "poop ore",
 
   "creativetab.cf4mod.cheets_mod_tab": "cheets mod tab"
 }

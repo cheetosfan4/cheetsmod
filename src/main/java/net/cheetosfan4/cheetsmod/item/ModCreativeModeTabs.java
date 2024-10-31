@@ -25,7 +25,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.cheese);
                         output.accept(ModBlocks.GRITTLE);
                         output.accept(ModBlocks.YANDESITE);
+                        output.accept(ModBlocks.POLISHED_YANDESITE);
                         output.accept(ModItems.CHISEL);
+                        output.accept(ModBlocks.MAGIC_BLOCK);
+                        output.accept(ModItems.eggy);
+                        output.accept(ModItems.geggy);
+                        output.accept(ModBlocks.POOP_ORE);
+                        output.accept(ModItems.poop);
                     })
                     .build());
 
