@@ -11,5 +11,9 @@
   "block.cf4mod.magic_block": "magic block",
   "block.cf4mod.poop_ore": "poop ore",
 
-  "creativetab.cf4mod.cheets_mod_tab": "cheets mod tab"
+  "creativetab.cf4mod.cheets_mod_tab": "cheets mod",
+
+  "tooltip.cf4mod.magic_block.tooltip1": "§cDIAMOND INTO CHEESE§r",
+  "tooltip.cf4mod.magic_block.tooltip2": "§6and turns eggy into geggy... omg§r",
+  "tooltip.cf4mod.poop.tooltip": "it stinky"
 }
