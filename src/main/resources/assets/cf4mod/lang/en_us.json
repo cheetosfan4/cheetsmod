@@ -10,6 +10,18 @@
   "block.cf4mod.grittle": "grittle",
   "block.cf4mod.magic_block": "magic block",
   "block.cf4mod.poop_ore": "poop ore",
+  "block.cf4mod.poop_block": "poop block",
+  "block.cf4mod.poop_stairs": "poop stairs",
+  "block.cf4mod.poop_slab": "poop slab",
+  "block.cf4mod.poop_button": "poop button",
+  "block.cf4mod.poop_pressure_plate": "poop pressure plate",
+  "block.cf4mod.poop_fence": "poop fence",
+  "block.cf4mod.poop_fence_gate": "poop fence gate",
+  "block.cf4mod.poop_wall": "poop wall",
+  "block.cf4mod.poop_door": "poop door",
+  "block.cf4mod.poop_trapdoor": "poop trapdoor",
+  "block.cf4mod.pink_sand": "pink sand",
+  "block.cf4mod.pink_sandstone": "pink sandstone",
 
   "creativetab.cf4mod.cheets_mod_tab": "cheets mod",
 

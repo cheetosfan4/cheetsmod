@@ -31,12 +31,27 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.YANDESITE.get());
         dropSelf(ModBlocks.POLISHED_YANDESITE.get());
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
+        dropSelf(ModBlocks.POOP_BLOCK.get());
 
         add(ModBlocks.POOP_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.POOP_ORE.get(), ModItems.poop.get(), 1, 1));
 
         add(ModBlocks.GRITTLE.get(),
                 block -> createMultipleOreDrops(ModBlocks.GRITTLE.get(), ModItems.cheese.get(), 2, 5));
+
+        dropSelf(ModBlocks.POOP_STAIRS.get());
+        dropSelf(ModBlocks.POOP_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.POOP_BUTTON.get());
+        dropSelf(ModBlocks.POOP_FENCE.get());
+        dropSelf(ModBlocks.POOP_FENCE_GATE.get());
+        dropSelf(ModBlocks.POOP_WALL.get());
+        dropSelf(ModBlocks.POOP_TRAPDOOR.get());
+        dropSelf(ModBlocks.PINK_SAND.get());
+        dropSelf(ModBlocks.PINK_SANDSTONE.get());
+        add(ModBlocks.POOP_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.POOP_SLAB.get()));
+        add(ModBlocks.POOP_DOOR.get(),
+                block -> createDoorTable(ModBlocks.POOP_DOOR.get()));
 
     }
 

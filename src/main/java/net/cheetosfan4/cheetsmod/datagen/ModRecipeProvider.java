@@ -29,13 +29,53 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', ModItems.cheese.get())
                 .unlockedBy("has_cheese", has(ModItems.cheese)).save((recipeOutput));
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_SANDSTONE.get())
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.PINK_SAND.get())
+                .unlockedBy("has_pink_sand", has(ModBlocks.PINK_SAND)).save((recipeOutput));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.POOP_BLOCK.get())
+                .pattern("PPP")
+                .pattern("PPP")
+                .pattern("PPP")
+                .define('P', ModItems.poop.get())
+                .unlockedBy("has_poop", has(ModItems.poop)).save((recipeOutput));
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.eggy.get(), 1)
                 .requires(ModItems.cheese.get())
                 .requires(Items.EGG)
                 .unlockedBy("has_cheese", has(ModItems.cheese)).save(recipeOutput);
         //.save(recipeOutput, "cf4mod:eggy_from_crafting_table");
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.poop.get(), 9)
+                        .requires(ModBlocks.POOP_BLOCK.get())
+                        .unlockedBy("has_poop", has(ModItems.poop)).save((recipeOutput));
+
         oreSmelting(recipeOutput, CHEESE_GET, RecipeCategory.MISC, ModItems.cheese.get(), 0.25f, 200, "cheese");
+
+        stairBuilder(ModBlocks.POOP_STAIRS.get(), Ingredient.of(ModItems.poop)).group("poop")
+                .unlockedBy("has_poop", has(ModItems.poop)).save(recipeOutput);
+        buttonBuilder(ModBlocks.POOP_BUTTON.get(), Ingredient.of(ModItems.poop)).group("poop")
+                .unlockedBy("has_poop", has(ModItems.poop)).save(recipeOutput);
+
+        pressurePlate(recipeOutput, ModBlocks.POOP_PRESSURE_PLATE.get(), ModItems.poop.get());
+
+        fenceBuilder(ModBlocks.POOP_FENCE.get(), Ingredient.of(ModItems.poop)).group("poop")
+                .unlockedBy("has_poop", has(ModItems.poop)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.POOP_FENCE_GATE.get(), Ingredient.of(ModItems.poop)).group("poop")
+                .unlockedBy("has_poop", has(ModItems.poop)).save(recipeOutput);
+
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POOP_WALL.get(), ModItems.poop.get());
+
+        doorBuilder(ModBlocks.POOP_DOOR.get(), Ingredient.of(ModItems.poop)).group("poop")
+                .unlockedBy("has_poop", has(ModItems.poop)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.POOP_TRAPDOOR.get(), Ingredient.of(ModItems.poop)).group("poop")
+                .unlockedBy("has_poop", has(ModItems.poop)).save(recipeOutput);
+
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.POOP_SLAB.get(), ModItems.poop.get());
+
+
 
     }
 

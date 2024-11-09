@@ -32,6 +32,20 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.geggy);
                         output.accept(ModBlocks.POOP_ORE);
                         output.accept(ModItems.poop);
+                        output.accept(ModBlocks.POOP_BLOCK);
+
+                        output.accept(ModBlocks.POOP_STAIRS);
+                        output.accept(ModBlocks.POOP_SLAB);
+                        output.accept(ModBlocks.POOP_PRESSURE_PLATE);
+                        output.accept(ModBlocks.POOP_BUTTON);
+                        output.accept(ModBlocks.POOP_FENCE);
+                        output.accept(ModBlocks.POOP_FENCE_GATE);
+                        output.accept(ModBlocks.POOP_WALL);
+                        output.accept(ModBlocks.POOP_DOOR);
+                        output.accept(ModBlocks.POOP_TRAPDOOR);
+                        output.accept(ModBlocks.PINK_SAND);
+                        output.accept(ModBlocks.PINK_SANDSTONE);
+
                     })
                     .build());
 
