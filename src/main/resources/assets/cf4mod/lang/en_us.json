@@ -27,5 +27,8 @@
 
   "tooltip.cf4mod.magic_block.tooltip1": "§cDIAMOND INTO CHEESE§r",
   "tooltip.cf4mod.magic_block.tooltip2": "§6and turns eggy into geggy... omg§r",
-  "tooltip.cf4mod.poop.tooltip": "it stinky"
+  "tooltip.cf4mod.poop.tooltip": "it stinky",
+
+  "biome.cf4mod.pink_beach": "pink beach"
+
 }
