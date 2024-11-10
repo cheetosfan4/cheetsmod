@@ -33,6 +33,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.POOP_ORE);
                         output.accept(ModItems.poop);
                         output.accept(ModBlocks.POOP_BLOCK);
+                        output.accept(ModBlocks.MANGO_LOG);
+                        output.accept(ModBlocks.PINK_SANDSTONE);
+                        output.accept(ModBlocks.MANGO_PLANKS);
+                        output.accept(ModBlocks.STRIPPED_MANGO_LOG);
 
                         output.accept(ModBlocks.POOP_STAIRS);
                         output.accept(ModBlocks.POOP_SLAB);

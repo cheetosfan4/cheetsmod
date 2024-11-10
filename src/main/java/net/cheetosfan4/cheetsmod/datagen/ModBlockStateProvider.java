@@ -22,7 +22,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.POOP_BLOCK);
         blockWithItem(ModBlocks.YANDESITE);
         blockWithItem(ModBlocks.PINK_SAND);
-        blockWithItem(ModBlocks.PINK_SANDSTONE);
+        blockWithItem(ModBlocks.MANGO_PLANKS);
+        //blockWithItem(ModBlocks.PINK_SANDSTONE);
 
         stairsBlock(ModBlocks.POOP_STAIRS.get(), blockTexture(ModBlocks.POOP_BLOCK.get()));
         slabBlock(ModBlocks.POOP_SLAB.get(), blockTexture(ModBlocks.POOP_BLOCK.get()), blockTexture(ModBlocks.POOP_BLOCK.get()));
@@ -35,7 +36,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(ModBlocks.POOP_DOOR.get(), modLoc("block/poop_door_bottom"), modLoc("block/poop_door_top"), "cutout");
         trapdoorBlockWithRenderType(ModBlocks.POOP_TRAPDOOR.get(), modLoc("block/poop_trapdoor"), true, "cutout");
 
-        //blockItem(ModBlocks.POOP_FENCE);
         blockItem(ModBlocks.POOP_STAIRS);
         blockItem(ModBlocks.POOP_SLAB);
         blockItem(ModBlocks.POOP_PRESSURE_PLATE);

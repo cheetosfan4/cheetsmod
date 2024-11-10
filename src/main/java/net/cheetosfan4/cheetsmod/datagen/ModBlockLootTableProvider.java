@@ -32,6 +32,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.POLISHED_YANDESITE.get());
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
         dropSelf(ModBlocks.POOP_BLOCK.get());
+        dropSelf(ModBlocks.MANGO_LOG.get());
+        dropSelf(ModBlocks.MANGO_PLANKS.get());
+        dropSelf(ModBlocks.STRIPPED_MANGO_LOG.get());
 
         add(ModBlocks.POOP_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.POOP_ORE.get(), ModItems.poop.get(), 1, 1));

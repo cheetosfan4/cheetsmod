@@ -3,12 +3,15 @@ package net.cheetosfan4.cheetsmod.datagen;
 import net.cheetosfan4.cheetsmod.CheetsMod;
 import net.cheetosfan4.cheetsmod.block.ModBlocks;
 import net.cheetosfan4.cheetsmod.item.ModItems;
+import net.cheetosfan4.cheetsmod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -34,6 +37,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("##")
                 .define('#', ModBlocks.PINK_SAND.get())
                 .unlockedBy("has_pink_sand", has(ModBlocks.PINK_SAND)).save((recipeOutput));
+
+/*        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANGO_PLANKS.get(), 4)
+                .requires(ModTags.Blocks.MANGO_LOGS<Block>)
+                .unlockedBy("has_mango_logs", has(ModBlocks.MANGO_LOG)).save(recipeOutput);
+
+ */
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.POOP_BLOCK.get())
                 .pattern("PPP")
